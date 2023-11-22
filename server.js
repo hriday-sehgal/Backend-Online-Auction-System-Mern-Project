@@ -483,7 +483,7 @@ app.post('/api/sendWelcomeEmail', async (req, res) => {
 });
 
 
-const port = 5500;
-app.listen(port,() => {
-    console.log("server is started on " + port)
+const port = process.env.PORT || 5500;
+app.listen(port, () => {
+  console.log("Server is started on port " + port);
 });
