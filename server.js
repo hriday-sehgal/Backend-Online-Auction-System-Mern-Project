@@ -20,7 +20,7 @@ mongoose.connection.on('error', (err) => {
 });
 
 const corsOptions = {
-  origin: 'http://localhost:3000', // Replace with your React app's domain
+  origin: 'https://bidbotauctionsystem.onrender.com', // Replace with your React app's domain
   credentials: true,
 };
 app.use(express.json());
